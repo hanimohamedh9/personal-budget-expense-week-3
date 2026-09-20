@@ -1,0 +1,147 @@
+/* Color Palette + Typography */
+
+body {
+    background-color: #f4f7f8;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #0f4c5c;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    color: #146c7e;
+    font-family: 'Poppins', sans-serif;
+}
+
+label,
+input,
+select,
+button,
+table {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+button:hover {
+    background-color: #21867a;
+}
+
+th {
+    background-color: #0f4c5c;
+    color: white;
+}
+
+/* Part 3: Style the Expense Table and Add Expense Form */
+
+/* Expense Table */
+.expenses-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.expenses-section th,
+.expenses-section td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.expenses-section th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternating row colors */
+.expenses-section tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.expenses-section tbody tr:hover {
+    background-color: #e6e6e6;
+}
+
+/* Add Expense Form */
+form {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Add Expense Button */
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Part 4: CSS Box Model - Card Layout */
+
+/* Page Heading Card */
+header {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 900px;
+}
+
+/* Add Expense Form Card */
+form {
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+/* Expense Table Card */
+.expenses-section {
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+/* Add spacing between sections */
+header,
+form,
+.expenses-section {
+    box-sizing: border-box;
+}
+
+/* Keep the table inside the card */
+.expenses-section table {
+    margin-top: 15px;
+}
